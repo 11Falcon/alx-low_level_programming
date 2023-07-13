@@ -2,9 +2,7 @@
 /**
  * main - Entry point
  * 
- * Description: 'the program's description'
- * @parameter: describe the parameter
- * 
+ * Description: "the program's description" 
  * Return: Always 0 (Success)
  */
 int main(void)

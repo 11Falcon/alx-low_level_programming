@@ -1,5 +1,5 @@
 #include <stdio.h>
-/* smiyti soufiane falcon*/
+/** smiyti soufiane falcon*/
 int main(void)
 {
 	/* Entry point of the program*/

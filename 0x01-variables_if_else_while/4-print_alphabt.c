@@ -12,10 +12,10 @@ int main(void)
 	i = 97;
 	while (i < 123)
 	{
-                s = i;
+		s = i;
 		if ((s != 'q') && (s != 'e'))
 			putchar(s);
-                i++;
+		i++;
         }
         putchar('\n');
         return (0);

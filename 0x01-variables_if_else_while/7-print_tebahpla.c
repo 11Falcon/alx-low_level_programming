@@ -4,12 +4,13 @@
  *
  * Return: Always 0(success)
  */
-int main(void){
+int main(void)
+{
 	int i;
 	char c;
 
 	i = 122;
-	for (i = 122;i > 97;i--)
+	for (i = 122;i > 96;i--)
 	{
 		c = i;
 		putchar(c);

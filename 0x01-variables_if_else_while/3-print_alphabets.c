@@ -12,14 +12,14 @@ int main(void)
 	i = 97;
 	while (i < 123){
 		c = i;
-		puts(c);
+		putchar(c);
 		i++;
 	}
 	i = 65;
 	while (i < 90){
 		c=i;
-		puts(c);
+		putchar(c);
 		i++;
 	}
-	puts("");
+	putchar("\n");
 }

@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-        int i;
-        char s;
+	int i;
+	char s;
 
-        i = 97;
-        while (i < 123)
-        {
+	i = 97;
+	while (i < 123)
+	{
                 s = i;
-		if (s!='q' && s!='e')
+		if ((s! = 'q') && (s != 'e'))
 			putchar(s);
                 i++;
         }

@@ -8,12 +8,14 @@ int main(void)
 {
 	int i;
 	char s;
-	i=97;
-	while(i < 123)
+
+	i = 97;
+	while (i < 123)
 	{
-		s=i;
+		s = i;
 		putchar(s);
 		i++;
 	}
+	putchar("\n");
 	return (0);
 }

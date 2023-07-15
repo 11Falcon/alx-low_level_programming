@@ -16,8 +16,8 @@ int main(void)
 			s = i % 10;
 			d = i - s;
 			d = d / 10;
-			putchar(s + '0');
 			putchar(d + '0');
+			putchar(s + '0');
 			putchar(' ');
 			l = j % 10;
 			m = j - l;

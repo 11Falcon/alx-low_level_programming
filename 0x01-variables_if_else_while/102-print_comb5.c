@@ -22,8 +22,8 @@ int main(void)
 			l = j % 10;
 			m = j - l;
 			m = m / 10;
-			putchar(l + '0');
 			putchar(m + '0');
+			putchar(l + '0');
 			if (!((i == 98) && (j == 99)))
 			{
 				putchar(',');

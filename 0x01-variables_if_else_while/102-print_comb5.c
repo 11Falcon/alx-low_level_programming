@@ -16,14 +16,14 @@ int main(void)
 			s = i % 10;
 			d = i - s;
 			d = d / 10;
-			putchar('s');
-			putchar('d');
+			putchar(s);
+			putchar(d);
 			putchar(' ');
 			l = j % 10;
 			m = j - l;
 			m = m / 10;
-			putchar('l');
-			putchar('m');
+			putchar(l);
+			putchar(m);
 			if((i != 98) && (j != 99))
 			{
 				putchar(',');

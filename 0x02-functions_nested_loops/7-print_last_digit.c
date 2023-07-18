@@ -7,7 +7,7 @@
  */
 int print_last_digit(int s)
 {
-	while(_abs(c) <10)
-		c = c // 10;
-	return (c);
+	while(_abs(s) <10)
+		s = s / 10;
+	return (s);
 }

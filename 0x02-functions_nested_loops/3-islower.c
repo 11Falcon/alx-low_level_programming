@@ -2,7 +2,7 @@
 /**
  * _islower - is lower
  *
- * Return:int
+ * Return:1 if lower and 0 if not
  */
 int _islower(int c)
 {
@@ -10,5 +10,4 @@ int _islower(int c)
 		return (1);
 	else
 		return (0);
-}
-		
+}		

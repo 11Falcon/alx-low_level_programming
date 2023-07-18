@@ -7,6 +7,8 @@
  */
 void print_alphabet(void)
 {
+  /* printing alphabets */
+
 	int i = 97;
 	char c;
 

@@ -4,7 +4,8 @@
  *
  * Return: Always 0(Success)
  */
-int print_alphabet(void)
+void print_alphabet(void);
+int main(void)
 {
 	int i = 97;
 	char c;

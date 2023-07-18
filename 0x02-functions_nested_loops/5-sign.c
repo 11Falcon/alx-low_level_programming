@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_sign - return the sign the number
+ * print_sign - Print the sign the number
  * @n : checking the sign of the input
- * Return : 1 if positive and 0 if zero if not then -1
+ * Return: 1 if positive and 0 if zero if not then -1
  */
 int print_sign(int n)
 {

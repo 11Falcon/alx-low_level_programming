@@ -10,4 +10,5 @@ int _isalpha(int c)
 	if ((c >= 65) && (c <= 90))
 		return (1);
 	else
-		_islower(c);
+		return _islower(c);
+}

@@ -7,7 +7,11 @@
  */
 int print_last_digit(int s)
 {
-	while(_abs(s) <10)
-		s = s / 10;
-	return (s);
+	int l;
+
+	last= s % 10;
+	if (l < 0)
+		l = l * -1;
+	_putchar(l + '0');
+	return (l);
 }

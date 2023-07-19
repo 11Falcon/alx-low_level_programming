@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * test - testing the positivity of the input
- * @i :input
+ * main - testing the positivity of the input
+ * 
  * Return : 1 if positive ,0 if negative
  */
 int main(void)

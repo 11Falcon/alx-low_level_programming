@@ -1,11 +1,16 @@
 #include "main.h"
-#include "..//0x01-variables_if_else_while//0-positive_or_negative.c"
 /**
- * main1 - testing the positivity of the input
- * 
+ * test - testing the positivity of the input
+ * @i :input
  * Return : 1 if positive ,0 if negative
  */
-int main1(void)
+int main(void)
 {
-	main();
+        int i;
+
+        i = 0;  /* Change this line to test different values */
+
+        positive_or_negative(i);
+
+        return (0);
 }

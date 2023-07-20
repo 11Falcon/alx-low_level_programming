@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - Entry point
+ * _isupper - Entry point
  * @c : input
  * Return : 1 if c is upper ,else 0
  */
-int main(char c)
+int _isupper(int c)
 {
 	int i;
 

@@ -3,6 +3,7 @@
 /**
  * _isupper - Entry point
  * @c : input
+ *
  * Return : 1 if c is upper ,else 0
  */
 int _isupper(int c)

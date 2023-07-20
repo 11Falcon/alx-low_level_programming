@@ -1,6 +1,5 @@
 #include <main.h>
 #include <stdio.h>
-#include <ctype.h>
 /**
  * _isdigit - Entry code
  * @c: input
@@ -9,5 +8,5 @@
  */
 int _isdigit(int c)
 {
-	return isdigit(c) != 0 ? 1 : 0;
+	return (c >= '0' && c <= '9') ? 1 : 0;
 }

@@ -5,7 +5,7 @@
  * @c : input
  * Return : 1 if c is upper ,else 0
  */
-void main(char c)
+int main(char c)
 {
 	int i;
 

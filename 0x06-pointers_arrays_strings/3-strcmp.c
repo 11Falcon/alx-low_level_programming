@@ -22,6 +22,7 @@ int _strcmp(char *s1, char *s2)
 		c = s1[i];
 		d = s2[i];
 		sum += c - d;
+		i++;
 	}
 	return (sum);
 }

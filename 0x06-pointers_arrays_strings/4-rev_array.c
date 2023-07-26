@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * reverse_array - Entry code
  * @a: input
@@ -8,7 +7,7 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i = 0;
+	int i;
 	
 	for (i = 0; i < n / 2; i++)
 	{

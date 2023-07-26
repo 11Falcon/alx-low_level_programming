@@ -11,12 +11,17 @@ int _strcmp(char *s1, char *s2)
 	int len = 0;
 	int s =0;
 	int sum = 0;
+	int c,d;
 
 	while (s2[s])
 		s++;
 	while (s1[len])
 		len++;
 	while (i < max(len,s))
-		sum += int(s1[i]) - int(s2[i];
+	{
+		c = s1[i];
+		d = s2[i];
+		sum += c - d;
+	}
 	return (sum);
 }

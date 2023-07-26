@@ -12,7 +12,6 @@ int _strcmp(char *s1, char *s2)
 	int len = 0;
 	int s = 0;
 	int sum = 0;
-	int c, d;
 	int lim;
 
 	while (s2[s])
@@ -23,12 +22,7 @@ int _strcmp(char *s1, char *s2)
 		lim = s;
 	else
 		lim = len;
-	while (i < lim)
-	{
-		c = s1[i];
-		d = s2[i];
-		sum += c - d;
+	while (i < lim && (s1[i] != s2[i]))
 		i++;
-	}
-	return (sum);
+	return (s1[i] - s2[i]);
 }

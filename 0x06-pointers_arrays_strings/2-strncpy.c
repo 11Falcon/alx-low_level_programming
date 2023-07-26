@@ -2,7 +2,7 @@
 /**
  * _strncpy - Entry
  * @dest: input
- * @scr: input
+ * @src: input
  * @n: input
  * Return: char
  */

@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
  * _strcat - Entry code
  * @dest: input
@@ -8,14 +9,15 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i;
-	int end = sizeof(*dest);
+	size_t i;
+	int end = strlen(dest);
 
-	for (i = 0; i < sizeof(*src); i++)
+	for (i = 0; i < strlen(src); i++)
 	{
-		if (*des[end - 1] != '\0'
-			*dest[end - 1] = *src[i];
+		if (dest[end - 1] != '\0')
+			dest[end - 1] = src[i];
 		end++;
 	}
-	*dest[sizeof(*dest)] = '\0';
+	dest[strlen(dest)] = '\0';
+	return (dest);
 }

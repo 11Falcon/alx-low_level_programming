@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strcmp
+ * _strcmp - Entry code
  * @s1: input
  * @s2: input
  * Return: int

@@ -9,13 +9,14 @@ int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
 	int len = 0;
+	int s =0;
+	int sum = 0;
 
-	while (s1[i] == s2[i])
-		i++;
-	while (S1[len])
+	while (s2[s])
+		s++;
+	while (s1[len])
 		len++;
-	if (i == len)
-		return (1);
-	else
-		return (0);
+	while (i < max(len,s))
+		sum += int(s1[i]) - int(s2[i];
+	return (sum);
 }

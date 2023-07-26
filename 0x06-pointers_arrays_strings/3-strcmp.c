@@ -22,7 +22,7 @@ int _strcmp(char *s1, char *s2)
 		lim = s;
 	else
 		lim = len;
-	while (i < lim && (s1[i] != s2[i]))
+	while (i < lim && (s1[i] == s2[i]))
 		i++;
 	return (s1[i] - s2[i]);
 }

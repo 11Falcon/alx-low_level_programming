@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strcmp
  * @s1: input
@@ -17,7 +18,7 @@ int _strcmp(char *s1, char *s2)
 		s++;
 	while (s1[len])
 		len++;
-	while (i < max(len,s))
+	while (i < min(len,s))
 	{
 		c = s1[i];
 		d = s2[i];

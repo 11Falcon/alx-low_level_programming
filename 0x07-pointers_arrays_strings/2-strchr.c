@@ -5,12 +5,15 @@
  * @c: input
  * Return: char
  */
-char *_strchr(char *s, char c) {
-    while (*s != '\0') {
-        if (*s == c) {
-            return s; // Found the character, return the pointer to it
+char *_strchr(char *s, char c)
+{
+    while (*s != '\0')
+    {
+        if (*s == c)
+	{
+            return s;
         }
-        s++; // Move to the next character in the string
+        s++;
     }
-    return NULL; // Character not found, return NULL
+    return NULL;
 }

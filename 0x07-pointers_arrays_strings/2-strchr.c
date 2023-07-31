@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * strchr - Entry code
+ * _strchr - Entry code
  * @s: input
  * @c: input
  * Return: char

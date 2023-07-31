@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * strchr - Entry code
  * @s: input

@@ -15,7 +15,7 @@ void print_chessboard(char (*a)[8])
 		col = 0;
 		while (col < 8)
 		{
-				_putchart(a[row][col]);
+				_putchar(a[row][col]);
 			col++;
 		}
 		row++;

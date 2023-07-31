@@ -8,11 +8,11 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j;
-	bool fa;
+	int fa;
 
 	i = 0;
 	j = 0;
-	fa = true;
+	fa = 1;
 	while ( s[i] && fa)
 	{
 		while ( accept[j])
@@ -23,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 					break;
 				}
 			else
-				fa = false;
+				fa = 0;
 		}
 	}
 	return (i);

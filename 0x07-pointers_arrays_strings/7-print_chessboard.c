@@ -17,11 +17,11 @@ void print_chessboard(char (*a)[8])
 		{
 			if (col == 7)
 			{
-				_putchar(a[row][col]);
-				_putchar('\n');
+				_putchart(a[row][col]);
+				_putchart('\n');
 			}
 			else
-				_putchar(a[row][col]);
+				_putchart(a[row][col]);
 			col++;
 		}
 		row++;

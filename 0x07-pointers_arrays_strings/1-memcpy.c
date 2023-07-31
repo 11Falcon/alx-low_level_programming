@@ -3,7 +3,7 @@
  * _memcpy - Entry code
  * @dest: input
  * @src: input
- * @c: input
+ * @n: input
  * Return: char
  */
 char *_memcpy(char *dest, char *src, unsigned int n)

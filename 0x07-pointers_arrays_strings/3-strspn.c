@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 	i = 0;
 	j = 0;
 	fa = 1;
-	while ( s[i] && fa)
+	while ( s[i] && (fa == 1)) 
 	{
 		while ( accept[j])
 		{
@@ -24,6 +24,7 @@ unsigned int _strspn(char *s, char *accept)
 				}
 			else
 				fa = 0;
+			j++;
 		}
 	}
 	return (i);

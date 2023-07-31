@@ -16,7 +16,8 @@ char *_memset(char *s, char b, unsigned int n)
 			_putchar(' ');
 		if (!(i % 10) && i)
 			{
-				_putchar("0x%02x", s[i]);
+				_putchar(b);
+				_putchar(s[i]);
 			}
 		i++;
 	}

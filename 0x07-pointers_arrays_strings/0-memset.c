@@ -9,17 +9,19 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i = 0;
+	char falcon = *s;
 
 	while (i < n)
 	{
 		if (i % 10)
-			_putchar(' ');
+			falcon += ' ');
 		if (!(i % 10) && i)
 			{
-				_putchar(b);
-				_putchar(s[i]);
+				falcon += b;
+				falcon += s[i]);
 			}
 		i++;
 	}
-	_putchar('\n');
+	falcon += '\n';
+	return (s);
 }

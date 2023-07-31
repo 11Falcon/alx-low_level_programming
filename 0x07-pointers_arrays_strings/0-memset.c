@@ -8,20 +8,12 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i = 0;
-	char falcon = *s;
+	unsigned int i = 0;
 
 	while (i < n)
 	{
-		if (i % 10)
-			falcon += ' ');
-		if (!(i % 10) && i)
-			{
-				falcon += b;
-				falcon += s[i]);
-			}
+		s[i] = b;
 		i++;
 	}
-	falcon += '\n';
 	return (s);
 }

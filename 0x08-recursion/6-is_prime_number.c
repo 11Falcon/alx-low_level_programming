@@ -8,8 +8,15 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	return (is_devided(n, n-1);
+	return (is_devided(n, n-1));
 }
+
+/**
+ * is_divided - Entry code
+ * @x: input
+ * @:dev: input
+ * Return: int
+ */
 int is_devided(int x ,int dev)
 {
 	if (div <= 1)

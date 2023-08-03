@@ -11,7 +11,6 @@ void _print_rev_recursion(char *s)
 	c = *s;
 	if(!c)
 	{
-		_putchar('\n');
 		return;
 	}
 	else

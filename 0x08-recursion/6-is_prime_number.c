@@ -1,29 +1,32 @@
 #include "main.h"
 /**
- * is_prime_number - Entry code
- * @n: input
- * Return: int
- */
+* is_prime_number - returns true if the number is prime
+*@n: the number to check
+*
+*Return: true if the number is prime
+*/
 int is_prime_number(int n)
 {
+	int start = n / 2;
+
 	if (n <= 1)
 		return (0);
-	return (is_devided(n, n-1));
+	return (is_prime(n, start));
 }
 
 /**
- * is_divided - Entry code
- * @x: input
- * @:dev: input
- * Return: int
- */
-int is_devided(int x ,int dev)
+* is_prime - returns the 1 if n is prime
+* @n: number to be checked
+* @start: number to start checking from
+*
+* Return: 1 if n is prime, 0 otherwise
+*/
+
+int is_prime(int n, int start)
 {
-	if (div <= 1)
-		return (0);
-	if (div == 2)
-		return (n % 2 == 0 ? 1 : 0);
-	if (n % div == 0)
+	if (start <= 1)
 		return (1);
-	return ( is_devided(n, dev -1));
+	else if (n % start == 0)
+		return (0);
+	return (is_prime(n, start - 1));
 }

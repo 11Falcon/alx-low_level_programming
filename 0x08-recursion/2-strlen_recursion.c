@@ -2,7 +2,7 @@
 /**
  * _strlen_recursion - Entry code
  * @s: input
- * return: int
+ * Return: int
  */
 int _strlen_recursion(char *s)
 {

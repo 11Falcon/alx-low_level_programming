@@ -10,7 +10,8 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if ((n == 1) || (n == 0))
 		return (n);
-	if ((_sqrt_recursion(n - 1) * _sqrt_recursion(n - 1)) <= n)
-		return (_sqrt_recursion(n - 1));
+	int root = _sqrt_recursion(n - 1);
+	if (root * root <= n)
+		return (root);
 	return (_sqrt_recursion(n - 1));
 }

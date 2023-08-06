@@ -1,4 +1,4 @@
-#include <unsintd.h>
+#include <stdio.h>
 /**
  * main - Entry code
  * @argc: input

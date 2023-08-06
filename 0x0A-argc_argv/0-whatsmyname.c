@@ -7,6 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	_putchar(argv[]);
+	char c = *argv[argc - 1];
+	_putchar(c);
 	return (0);
 }

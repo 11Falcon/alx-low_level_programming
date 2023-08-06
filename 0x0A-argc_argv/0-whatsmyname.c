@@ -3,11 +3,12 @@
 /**
  * main - Entry code
  * @argv: input
+ * @argc: input
  * Return: int
  */
 int main(int argc, char *argv[])
 {
-	char c = *argv[argc - 1];
-	_putchar(c);
+	printf("%s\n",argv[0]);
+	(void)argc;
 	return (0);
 }

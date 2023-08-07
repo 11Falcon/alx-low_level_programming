@@ -14,12 +14,16 @@ char *str_concat(char *s1, char *s2)
 	int count1 = 0;
 	int count2 = 0;
 
-	while(s1[count1])
+	while (s1[count1])
 		count1++;
-	while(s2[count2])
+	while (s2[count2])
 	{
 		count2++;
 	}
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	ret = (char*)malloc(sizeof(char) * (count1 + count2 + 1));
 	if (ret == NULL)
 		return (0);

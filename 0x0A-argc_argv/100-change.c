@@ -9,21 +9,18 @@
 int main(int argc, char *argv[])
 {
 	int result = 0;
-	int rest = 0;
+	int rest = atoi(argv[1]);
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	rest = atoi(argv[1]);
 	while (rest != 0)
 	{
-		if(rest < 0)
-		{
+		if (rest < 0)
 			printf("0\n");
-		}
-		if (rest >= 25)
+		else if (rest >= 25)
 		{
 			rest -= 25;
 			result += 1;

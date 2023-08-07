@@ -18,6 +18,7 @@ char *_strdup(char *str)
 
 	if (str == NULL || c == NULL)
 	{
+		fprintf(stderr, "Failed to allocate memory\n");
 		return (NULL);
 	}
 	while (str[i])

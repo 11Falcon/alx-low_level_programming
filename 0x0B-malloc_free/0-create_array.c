@@ -7,7 +7,7 @@
  * @c: input
  * Return: int
  */
-int *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	int *i;
 

@@ -23,7 +23,7 @@ char *create_array(unsigned int size, char c)
 		fprintf(stderr,"Failed to allocate memory\n");
 		return (NULL);
 	}
-		i = c;
+		*i = c;
 
 	return (i);
 }

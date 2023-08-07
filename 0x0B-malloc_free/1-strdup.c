@@ -15,9 +15,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < sizeof(*str); i++)
+	while (str[i])
 	{
 		c[i] = str[i];
+		i++;
 	}
 	return (c);
 }

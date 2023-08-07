@@ -16,11 +16,13 @@ char *_strdup(char *str)
 		ash++;
 	c = (char *)malloc((ash + 1) * sizeof(char));
 
-	if (str == NULL || c == NULL)
+	if (str == NULL)
 	{
 		fprintf(stderr, "Failed to allocate memory\n");
 		return (NULL);
 	}
+	if(c == NULL)
+		return (NULL);
 	while (str[i])
 	{
 		*(c + i) = *(str + i);

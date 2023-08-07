@@ -11,9 +11,10 @@ char *_strdup(char *str)
 {
 	int i = 0;
 	int ash = 0;
+	char *c;
 	while (*(str + ash))
 		ash++;
-	char *c = (char *)malloc((ash + 1) * sizeof(char));
+	c = (char *)malloc((ash + 1) * sizeof(char));
 
 	if (str == NULL)
 	{

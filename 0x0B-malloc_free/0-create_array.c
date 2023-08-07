@@ -20,10 +20,10 @@ char *create_array(unsigned int size, char c)
 	}
 	if (i == NULL)
 	{
-		fprintf(stderr,"Failed to allocate memory\n");
+		fprintf(stderr, "Failed to allocate memory\n");
 		return (NULL);
 	}
-		for (s = 0;s < size; s++)
+		for (s = 0; s < size; s++)
 		{
 			i[s] = c;
 		}

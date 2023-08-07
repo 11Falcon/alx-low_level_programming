@@ -21,10 +21,10 @@ char *str_concat(char *s1, char *s2)
 		count2++;
 	}
 	if (s1 == NULL)
-		s1 = "";
+		*s1 = "";
 	if (s2 == NULL)
-		s2 = "";
-	ret = (char*)malloc(sizeof(char) * (count1 + count2 + 1));
+		*s2 = "";
+	ret = (char *)malloc(sizeof(char) * (count1 + count2 + 1));
 	if (ret == NULL)
 		return (0);
 	for (i = 0; i < count1; i++)
@@ -32,6 +32,6 @@ char *str_concat(char *s1, char *s2)
 		*(ret + i) = *(s1 + i);
 	}
 	for (i = 0; i < count2; i++)
-		*(ret + count1 + i) = *(s2 +i);
+		*(ret + count1 + i) = *(s2 + i);
 	return (ret);
 }

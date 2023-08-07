@@ -10,6 +10,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *i;
+	unsigned int s;
 
 	i = (char *)malloc(size * sizeof(char));
 	(void)c;
@@ -22,7 +23,10 @@ char *create_array(unsigned int size, char c)
 		fprintf(stderr,"Failed to allocate memory\n");
 		return (NULL);
 	}
-		*i = c;
+		for (s = 0;s < size; s++)
+		{
+			i[s] = c[s];
+		}
 
 	return (i);
 }

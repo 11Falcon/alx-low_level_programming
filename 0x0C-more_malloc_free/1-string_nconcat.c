@@ -10,9 +10,15 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *pointer;
-	int i = 0;
+	unsigned int i = 0;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	pointer = malloc(sizeof(s1) + n);
+	if (pointer ==NULL)
+		return (pointer);
 	while (i < sizeof(s1) - 1)
 	{
 		pointer[i] = s1[i];
@@ -24,4 +30,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		pointer[sizeof(s1) + i] = s2[i];
 		i++;
 	}
+	return (pointer);
 }

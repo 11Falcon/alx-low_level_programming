@@ -2,14 +2,16 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * new_god - struct
+ * new_dog - struct
  * @name: char
  * @age: float
  * @owner: char
+ * Return: dog_t
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
+
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 		return (NULL);

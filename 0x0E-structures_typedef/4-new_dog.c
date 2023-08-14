@@ -1,3 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "dog.h"
+/**
+ * new_god - struct
+ * @name: char
+ * @age: float
+ * @owner: char
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
@@ -9,4 +18,3 @@ dog_t *new_dog(char *name, float age, char *owner)
 	d->owner = owner;
 	return (d);
 }
-

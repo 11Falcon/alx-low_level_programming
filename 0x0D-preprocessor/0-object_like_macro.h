@@ -1,4 +1,3 @@
-#ifndef 0_falcon
-#define 0_falcon
+#ifndef SIZE
 #define SIZE 1024
 #endif

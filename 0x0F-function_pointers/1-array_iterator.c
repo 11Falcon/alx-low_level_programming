@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "function_pointers.h"
+#define size_t sizeof(int);
 /**
  * array_iterator - Entry code
  * @array: input

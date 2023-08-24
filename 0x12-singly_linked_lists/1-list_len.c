@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * size_t - Entry code
+ * list_len - Entry code
  * @h: input
  * Return: size_t
  */

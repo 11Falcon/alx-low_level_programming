@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * print_list - Entry code
- * @list_t: input
+ * @h: input
  * Return: size_t
  */
 size_t print_list(const list_t *h)

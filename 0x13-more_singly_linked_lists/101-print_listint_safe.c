@@ -11,17 +11,17 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *list = head;
 	size_t count = 0;
 
-	if(!head)
+	if (!head)
 		return (98);
 	while (list)
 	{
-		printf("[%p] %d\n", (void *)list, list->n);
 		count++;
 		if (list <= list->next)
 		{
 			printf("[%p] %u\n", (void *)list, list->n);
 			break;
 		}
+		printf("[%p] %d\n", (void *)list, list->n);
 		list = list->next;
 	}
 	return (count);

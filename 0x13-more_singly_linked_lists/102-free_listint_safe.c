@@ -18,6 +18,11 @@ size_t free_listint_safe(listint_t **h)
 		free(list);
 		list = temp;
 		count++;
+		if ((void *)temp >= (void *)list)
+		{
+			*h = NULL;
+			break;
+		}
 	}
 	*h = NULL;
 	return (count);

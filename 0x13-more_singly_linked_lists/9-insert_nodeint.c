@@ -1,6 +1,13 @@
 #include "lists.h"
 #include <stddef.h>
 #include <stdlib.h>
+/**
+ * insert_nodeint_at_index - inserting a new node in the idx position
+ * @head: our linked list
+ * @idx: the index to insert in
+ * @n: the value of the node
+ * Return: the new node
+ */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *linked = *head;

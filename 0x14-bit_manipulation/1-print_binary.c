@@ -25,7 +25,7 @@ void print_binary(unsigned long int n)
 		if (po < n)
 		{
 			printf("1");
-			n = n % po;
+			n = n - po;
 		}
 		else
 			printf("0");

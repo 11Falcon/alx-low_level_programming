@@ -1,28 +1,57 @@
-int cp(char *file_from, char *file_to)
+#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+/**
+ * main - copies the content of a file to another file
+ * @argc: number of arguments passed to the program
+ * @argv: array of arguments
+ *
+ * Return: Always 0 (Success)
+ */
+int main(int argc, char *argv[])
 {
-	int fd, fl, count = 0;
-	char *ash;
+	int fd_r, fd_w, r, a, b;
+	char buf[BUFSIZ];
 
-	fd = open(file_from, O_RDONLY);
-	fl = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0600);
-	if (fd == -1)
+	if (argc != 3)
 	{
-		write(STDERR_FILENO, "Error: Can't read from file " + *file_from + "\n");
-		exit (98);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
 	}
-	if (fl == -1)
+	fd_r = open(argv[1], O_RDONLY);
+	if (fd_r < 0)
 	{
-		write(STDERR_FILENO, "Error: Can't write to " + *file_to + '\n');
-		exit (99);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
 	}
-	count = read(fd, ash);
-
-
-	if (close (fl) = -1)
+	fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	while ((r = read(fd_r, buf, BUFSIZ)) > 0)
 	{
-		write(STDERR_FILNO, "Error: Can't close fd " + *file_to + '\n');
-		exit (100);
+		if (fd_w < 0 || write(fd_w, buf, r) != r)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close(fd_r);
+			exit(99);
+		}
 	}
+	if (r < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+	a = close(fd_r);
+	b = close(fd_w);
+	if (a < 0 || b < 0)
+	{
+		if (a < 0)
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_r);
+		if (b < 0)
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_w);
+		exit(100);
+	}
+	return (0);
 }
-
-

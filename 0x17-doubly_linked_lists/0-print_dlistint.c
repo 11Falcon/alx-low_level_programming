@@ -7,12 +7,12 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *image = h;
+	const dlistint_t *image = h;
 	size_t count = 0;
-;
+
 	while (image)
 	{
-		printf("%s", image->n);
+		printf("%d\n", image->n);
 		image = image->next;
 		count++;
 	}

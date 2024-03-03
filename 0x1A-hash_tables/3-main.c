@@ -20,6 +20,6 @@ int main(void)
     hash_table_set(ht, "vivency", "dram");
     hash_table_set(ht, "stylist", "subgenera");
     hash_table_set(ht, "subgenera", "stylist");
-    hash_table_set(ht, "", "");
+    hash_table_set(NULL, "", "");
     return (EXIT_SUCCESS);
 }

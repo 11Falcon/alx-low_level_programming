@@ -12,7 +12,6 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	if (!ht || ht->size == 0)
 	{
-		printf("1");
 		printf("}\n");
 		return;
 	}

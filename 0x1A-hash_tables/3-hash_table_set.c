@@ -9,8 +9,6 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	if (!key || !value || !ht || !ht->size || !ht->array)
-		return (0);
 	int index = key_index((unsigned char *)key, ht->size);
 	hash_node_t *node = ht->array[index];
 
